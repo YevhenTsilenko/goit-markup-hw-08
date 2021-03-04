@@ -1,0 +1,43 @@
+.specification {
+    display: none;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .specification {
+        display: block;
+        padding-bottom: 94px; 
+    }
+    
+    .specification-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .specification-list-item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    
+    .specification-type-div {
+        position: relative;
+    }
+    
+    .specification-type {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 27px 0;
+    }
+}

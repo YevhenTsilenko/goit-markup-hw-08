@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  padding: 0 15px;
+
+  .header & {
+    @include flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ECECEC;
+  }
+
+    .hero & {
+      @include flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 60px;
+    }
+
+    .advantages &,
+    .team & {
+      margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+
+    .header & {
+    @include flex;
+    }
+
+    .hero & {
+      padding: 0 200px;
+    }
+
+    .footer & {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+
+    .hero & {
+      padding: 0 250px;
+    }
+
+    .footer & {
+      display:  flex;
+      flex-wrap: nowrap;
+      justify-content: start;
+    }
+  }
+}

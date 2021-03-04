@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!--Шапка сайта-->
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a class="logo" href="index.html" lang="en"><span class="logo-1-part">Web</span>Studio</a>
+                <ul class="navigation-list">
+                    <li class="navigation-list-item"><a class="navigation-list-link" href="index.html">Студия</a></li>
+                    <li class="navigation-list-item"><a class="navigation-list-link portfolio-header-element current" href="portfolio.html" target="_blank">Портфолио</a></li>
+                    <li class="navigation-list-item"><a class="navigation-list-link" href="#" target="_blank">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button  type="button" class="menu-btn" data-menu-button>
+                <svg class="menu-icon">
+                    <use href="./images/sprite.svg#menu-icon"></use>
+                </svg>
+            </button>
+
+             <ul class="contact-list">
+                 <li class="contact-list-item">
+                    <a class="contact-mail header-mail" href="mailto:info@devstudio.com">              
+                        <svg class="mail-icon">
+                            <use href="./images/sprite.svg#envelope"></use>
+                        </svg>
+                        <p class="mail">info@devstudio.com</p>
+                    </a>
+                </li>
+                 <li class="contact-list-item">
+                    <a class="contact-phone header-phone" href="tel:+380961111111">
+                        <svg class="phone-icon">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>
+                        <p class="phone">+38 096 111 11 11</p>
+                    </a>
+                </li>
+             </ul>
+        </div>
+
+        <div class="mobile-menu" data-menu>
+
+            <button type="button" class="mobile-menu-close-btn" data-menu-close>
+                <svg class="menu-close-icon">
+                    <use href="./images/sprite.svg#menu-close"></use>
+                </svg>
+            </button>
+
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-link" href="index.html">Студия</a></li>
+                <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-link current" href="portfolio.html" target="_blank">Портфолио</a></li>
+                <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-link" href="#" target="_blank">Контакты</a></li>
+            </ul>
+
+            <ul class="mobile-menu-contcts">
+                <li class="mobile-menu-contacts-item">
+                    <a href="tel:+380961111111" class="mobile-menu-phone">+380961111111</a>
+                </li>
+                <li class="mobile-menu-contacts-item">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu-email">info@devstudio.com</a>
+                </li>
+            </ul>
+
+            <ul class="mobile-menu-social-list">
+                <li class="mobile-menu-social-item">
+                    <a class="mobile-menu-social-link" href="#">Instagram</a>    
+                </li>
+                <li class="mobile-menu-social-item">
+                    <a class="mobile-menu-social-link" href="#">Twitter</a>    
+                </li>
+                <li class="mobile-menu-social-item">
+                    <a class="mobile-menu-social-link" href="#">Facebook</a>
+                </li>
+                    
+                <li class="mobile-menu-social-item">
+                    <a class="mobile-menu-social-link" href="#">LinkedIn</a>    
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+    <main>
+        <section class="portfolio-section">
+            <div class="container">
+                <h2 class="visually-hidden">Разделы портфолио</h2>
+                    <ul class="portfolio-section-list">
+                        <li class="portfolio-section-list-item"><button type="button" class="portfolio-section-list-button current-btn">Все</button></li>
+                        <li class="portfolio-section-list-item"><button type="button" class="portfolio-section-list-button">Веб-сайты</button></li>
+                        <li class="portfolio-section-list-item"><button type="button" class="portfolio-section-list-button">Приложения</button></li>
+                        <li class="portfolio-section-list-item"><button type="button" class="portfolio-section-list-button">Дизайн</button></li>
+                        <li class="portfolio-section-list-item"><button type="button" class="portfolio-section-list-button">Маркетинг</button></li>
+                    </ul>
+
+                    <ul class="examples-list">
+                        <li class="examples-list-item">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/tehnokriak-desktop.webp 1x, ./images/page2/tehnokriak-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/tehnokriak-desktop.jpg 1x, ./images/page2/tehnokriak-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/tehnokriak-tablet.webp 1x, ./images/page2/tehnokriak-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/tehnokriak-tablet.jpg 1x, ./images/page2/itehnokriak-tablet2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/tehnokriak-mobile.webp 1x, ./images/page2/tehnokriak-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/tehnokriak-mobile.jpg 1x, ./images/page2/tehnokriak-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/tehnokriak-mobile.jpg" alt="Веб-сайт Технокряк">
+                                    </picture>
+                                    <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Технокряк</h3>
+                                    <p  class="examples-list-item-section">Веб-сайт</p>
+                                </div>
+                            </a>
+                    
+                        </li>
+                        <li class="examples-list-item">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/poster-desktop.webp 1x, ./images/page2/poster-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/poster-desktop.jpg 1x, ./images/page2/poster-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/poster-tablet.webp 1x, ./images/page2/poster-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/poster-tablet.jpg 1x, ./images/page2/poster-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/poster-mobile.webp 1x, ./images/page2/poster-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/poster-mobile.jpg 1x, ./images/page2/poster-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/poster-mobile.jpg" alt="Постер New Orlean vs Golden Star">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Постер<span lang="en"> New Orlean vs Golden Star</span></h3>
+                                    <p  class="examples-list-item-section">Дизайн</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples-list-item">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/seafood-desktop.webp 1x, ./images/page2/seafood-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/seafood-desktop.jpg 1x, ./images/page2/seafood-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/seafood-tablet.webp 1x, ./images/page2/seafood-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/seafood-tablet.jpg 1x, ./images/page2/seafood-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/seafood-mobile.webp 1x, ./images/page2/seafood-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/seafood-mobile.jpg 1x, ./images/page2/seafood-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/seafood-mobile.jpg" alt="Ресторан Seafood">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Ресторан<span lang="en"> Seafood</span></h3>
+                                    <p  class="examples-list-item-section">Приложение</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples-list-item">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/prime-desktop.webp 1x, ./images/page2/prime-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/prime-desktop.jpg 1x, ./images/page2/prime-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/prime-tablet.webp 1x, ./images/page2/prime-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/prime-tablet.jpg 1x, ./images/page2/prime-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/prime-mobile.webp 1x, ./images/page2/prime-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/prime-mobile.jpg 1x, ./images/page2/prime-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/prime-mobile.jpg" alt="Проект Prime">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Проект<span lang="en"> Prime</span></h3>
+                                    <p  class="examples-list-item-section">Маркетинг</p>
+                                    
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="examples-list-item">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/boxes-desktop.webp 1x, ./images/page2/boxes-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/boxes-desktop.jpg 1x, ./images/page2/boxes-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/boxes-tablet.webp 1x, ./images/page2/boxes-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/boxes-tablet.jpg 1x, ./images/page2/boxes-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/boxes-mobile.webp 1x, ./images/page2/boxes-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/boxes-mobile.jpg 1x, ./images/page2/boxes-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/boxes-mobile.jpg" alt="Проект Boxes">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Проект<span lang="en"> Boxes</span></h3>
+                                    <p  class="examples-list-item-section">Приложение</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples-list-item">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/inspiration-desktop.webp 1x, ./images/page2/inspiration-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/inspiration-desktop.jpg 1x, ./images/page2/inspiration-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/inspiration-tablet.webp 1x, ./images/page2/inspiration-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/inspiration-tablet.jpg 1x, ./images/page2/inspiration-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/inspiration-mobile.webp 1x, ./images/page2/inspiration-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/inspiration-mobile.jpg 1x, ./images/page2/inspiration-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/inspiration-mobile.jpg" alt="Веб-сайт Inspiration has no Borders">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name" lang="en">Inspiration has no Borders</h3>
+                                    <p  class="examples-list-item-section">Веб-сайт</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples-list-item ">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/isdanie-desktop.webp 1x, ./images/page2/isdanie-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/isdanie-desktop.jpg 1x, ./images/page2/isdanie-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/isdanie-tablet.webp 1x, ./images/page2/isdanie-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/isdanie-tablet.jpg 1x, ./images/page2/isdanie-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/isdanie-mobile.webp 1x, ./images/page2/isdanie-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/isdanie-mobile.jpg 1x, ./images/page2/isdanie-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/isdanie-mobile.jpg" alt="Издание Limited Edition">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Издание<span lang="en"> Limited Edition</span></h3>
+                                    <p  class="examples-list-item-section">Дизайн</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                        <li class="examples-list-item marginbot">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/lab-desktop.webp 1x, ./images/page2/lab-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/lab-desktop.jpg 1x, ./images/page2/lab-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/lab-tablet.webp 1x, ./images/page2/lab-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/lab-tablet.jpg 1x, ./images/page2/lab-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/lab-mobile.webp 1x, ./images/page2/lab-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/lab-mobile.jpg 1x, ./images/page2/lab-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/lab-mobile.jpg" alt="Проект LAB">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name">Проект <span lang="en">LAB</span></h3> 
+                                    <p  class="examples-list-item-section">Маркетинг</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="examples-list-item marginbot">
+                            <a class="examples-list-link" href="#">
+                                <div class="overlay-div">
+                                    <picture>
+                                        <source srcset="./images/page2/growing-desktop.webp 1x, ./images/page2/growing-desktop@2x.webp 2x" 
+                                                media="(min-width: 1200px)" type="image/webp">
+                                        <source srcset="./images/page2/growing-desktop.jpg 1x, ./images/page2/growing-desktop@2x.jpg 2x" 
+                                                media="(min-width: 1200px)">
+
+                                        <source srcset="./images/page2/growing-tablet.webp 1x, ./images/page2/growing-tablet@2x.webp 2x" 
+                                                media="(min-width: 768px)" type="image/webp">
+                                        <source srcset="./images/page2/growing-tablet.jpg 1x, ./images/page2/growing-tablet@2x.jpg 2x" 
+                                                media="(min-width: 768px)">
+
+                                        <source srcset="./images/page2/growing-mobile.webp 1x, ./images/page2/growing-mobile@2x.webp 2x" 
+                                                media="(min-width: 320px)" type="image/webp">
+                                        <source srcset="./images/page2/growing-mobile.jpg 1x, ./images/page2/growing-mobile@2x.jpg 2x" 
+                                                media="(min-width: 320px)">
+                                        <img class="examples-list-img" src="./images/page2/growing-mobile.jpg" alt="Приложение Growing Business">
+                                    </picture>
+                                    <p class="overlay"></p>
+                                </div>
+                                <div class="examples-list-item-margin">
+                                    <h3 class="examples-list-name" lang="en">Growing Business</h3>
+                                    <p  class="examples-list-item-section">Приложение</p>
+                                    
+                                </div>
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-margin">
+            <div class="first-column-footer">
+                <a class="logo" href="/" lang="en"><span class="logo-1-part">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-list-item"><a class="localisation" href="https://goo.gl/maps/frfhgGtXb9i2Uy5P6" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address-list-item"><a class="contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="address-list-item"><a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="second-column-footer">
+                <p class="join-us">Присоединяйтесь</p>
+                <ul class="social-links-list">
+                    <li class="social-links-item">
+                        <a href="" class="social-links-link">
+                            <svg class="social-links-link-icon">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links-item">
+                        <a href="" class="social-links-link">
+                            <svg class="social-links-link-icon">
+                                <use href="./images/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links-item">
+                        <a href="" class="social-links-link">
+                            <svg class="social-links-link-icon">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links-item">
+                        <a href="" class="social-links-link">
+                            <svg class="social-links-link-icon">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="third-column-footer">
+                <p class="footer-form-indication">Подпишитесь на рассылку</p>
+                <form action="#" class="footer-form">
+                    <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail">
+                    <button type="button" class="btn">
+                        Подписаться
+                        <svg class="footer-form-icon">
+                            <use href="./images/sprite.svg#telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>   
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>

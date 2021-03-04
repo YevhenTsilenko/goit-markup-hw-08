@@ -1,0 +1,87 @@
+.team {
+    padding: 60px 0;
+    background: #F5F4FA;
+    width: 480px;
+    margin: 0 auto;
+} 
+
+.team-member {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 450px;
+}
+
+.member-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em; 
+    color: #212121;    
+}
+
+.member-specialization {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.taem-member-card {
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+
+@media screen and (max-width:767px) {
+    .team-member {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+        width: 768px;
+    }
+
+    .team-member {
+        width: 354px;
+        margin: 15px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding: 94px 0;
+        width: 1200px;
+    }
+
+    .team-list {
+        margin: 0;
+    }
+
+    .team-member {
+        margin: 0;
+        width: 270px;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    .taem-member-card {
+        padding-bottom: 30px;
+        margin: 0 auto;
+    }
+}
