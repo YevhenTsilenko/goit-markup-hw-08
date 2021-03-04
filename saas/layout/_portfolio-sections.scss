@@ -1,6 +1,5 @@
 .portfolio-section {
     padding: 60px 0;
-    width: 480px;
     margin: 0 auto;
 }
 
@@ -40,11 +39,6 @@
         background-color: var(--accent-color);
         color: #FFFFFF;
     }
-}
-
-.current-btn {
-    color: #F5F4FA;
-    background-color: var(--accent-color)
 }
 
 .examples-list {
@@ -117,10 +111,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .portfolio-section {
-        width: 768px;
-    }
-
     .portfolio-section-list {
         flex-wrap: nowrap;
         align-items: center;
@@ -141,13 +131,16 @@
 
     .examples-list-item {
         width: 354px;
+        &:first-child .examples-list-item-margin {
+            padding-bottom: 56px;
+        }
     }
 } 
 
 @media screen and (min-width: 1200px) {
     .portfolio-section {
         padding: 94px 0;
-        width: 1200px;
+        max-width: 1600px;
     }
 
     .portfolio-section-list {
@@ -156,6 +149,9 @@
 
     .examples-list-item {
         width: 370px;
+        &:first-child .examples-list-item-margin {
+            padding-bottom: 20px;
+        }
     }
 }
 

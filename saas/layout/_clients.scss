@@ -1,7 +1,6 @@
 .clients {
     padding: 60px 0;
     margin: 0 auto;
-    width: 480px;
 }
 
 .clients-list {
@@ -68,10 +67,6 @@
 }
 
 @media screen and (min-width:768px) {
-    .clients {
-        width: 768px;
-    }
-
     .clients-list-item {
         width: calc((100% - 15px*6)/3);
     }
@@ -80,7 +75,7 @@
 @media screen and (min-width: 1200px) {
     .clients {
         padding: 94px 0;
-        width: 1200px;
+        max-width: 1600px;
     }
 
     .clients-list {

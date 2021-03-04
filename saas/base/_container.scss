@@ -36,6 +36,7 @@
 
     .header & {
     @include flex;
+    padding: 0 15px;
     }
 
     .hero & {
