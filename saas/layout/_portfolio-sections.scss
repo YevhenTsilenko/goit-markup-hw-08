@@ -110,6 +110,13 @@
     padding: 20px 24px;
 }
 
+@media screen and (max-width: 430px) {
+     .overlay {
+        padding: 5% 24px;
+        font-size: 15px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .portfolio-section-list {
         flex-wrap: nowrap;

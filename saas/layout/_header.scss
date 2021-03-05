@@ -1,5 +1,6 @@
 .header {
     margin: 0 auto;
+    border-bottom: 1px solid #ECECEC;
 }
 
 @media screen and (max-width: 767px) {
@@ -74,9 +75,8 @@
     }  
     
     .mobile-menu-nav-item {
-        &:not(:last-child) {
             margin-bottom: 32px;
-        }
+        
     }
 
     .mobile-menu-nav-link {
